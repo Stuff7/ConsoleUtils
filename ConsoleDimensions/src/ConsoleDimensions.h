@@ -7,5 +7,7 @@
 #endif // Windows/Linux
 
 namespace ConsoleUtils {
-  void get_console_size(int &width, int &height);
+  extern "C" {
+    void get_console_size(int &width, int &height);
+  }
 }
