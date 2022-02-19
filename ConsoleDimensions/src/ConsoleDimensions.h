@@ -8,6 +8,6 @@
 
 namespace ConsoleUtils {
   extern "C" {
-    void get_console_size(int &width, int &height);
+    void get_console_size(unsigned int &width, unsigned int &height);
   }
 }

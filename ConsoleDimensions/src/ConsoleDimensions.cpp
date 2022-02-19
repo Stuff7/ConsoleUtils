@@ -1,6 +1,6 @@
 #include "ConsoleDimensions.h"
 
-void ConsoleUtils::get_console_size(int& width, int& height) {
+void ConsoleUtils::get_console_size(unsigned int& width, unsigned int& height) {
   #if defined(_WIN32)
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
